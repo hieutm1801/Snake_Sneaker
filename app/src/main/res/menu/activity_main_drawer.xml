@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/home"
+            android:icon="@drawable/ic_home_new"
+            android:title="@string/home" />
+        <item
+            android:id="@+id/category"
+            android:icon="@drawable/cat"
+            android:title="@string/category"
+            android:visible="false"/>
+        <item
+            android:id="@+id/brand"
+            android:icon="@drawable/ic_brand_new"
+            android:title="@string/brand" />
+        <item
+            android:id="@+id/offer"
+            android:icon="@drawable/ic_voucher_new"
+            android:title="@string/offer" />
+        <item
+            android:id="@+id/wish_list"
+            android:icon="@drawable/ic_wish_new"
+            android:title="@string/wish_list" />
+        <item
+            android:id="@+id/my_order"
+            android:icon="@drawable/ic_order_new"
+            android:title="@string/my_order" />
+        <item
+            android:id="@+id/profile"
+            android:icon="@drawable/ic_profile_new"
+            android:title="@string/profile" />
+        <item
+            android:id="@+id/setting"
+            android:icon="@drawable/ic_setting_new"
+            android:title="@string/setting" />
+        <item
+            android:id="@+id/login"
+            android:icon="@drawable/login"
+            android:title="@string/login" />
+    </group>
+
+</menu>

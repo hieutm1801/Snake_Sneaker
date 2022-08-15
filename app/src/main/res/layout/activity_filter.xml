@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="hieutm.dev.snakesneaker.activity.Filter"
+    android:background="@color/bg_filter">
+
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/toolbar_filter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/toolbar"
+        android:textStyle="bold"
+        android:theme="@style/AppTheme.AppBarOverlayLight"
+        app:titleTextColor="@color/color_icon_menu"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+
+    <RelativeLayout
+        android:id="@+id/rel_main_filter"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbar_filter"
+        android:layout_above="@+id/linearLayout_filter">
+
+        <RelativeLayout
+            android:layout_above="@+id/linearLayout_text_filter"
+            android:id="@+id/relativeLayout_view_filter"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:id="@+id/rel_sortBy_filter"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@color/rec_filter">
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:text="@string/sort_by"
+                    android:textStyle="bold"
+                    android:textSize="16sp"
+                    android:textColor="@color/textView_filter" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recyclerView_sortBy_filter"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginStart="10dp" />
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rel_sortBy_filter">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recyclerView_filter"
+                    android:layout_width="110dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/rec_filter" />
+
+                <FrameLayout
+                    android:id="@+id/frameLayout_filter"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="-10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_toEndOf="@+id/recyclerView_filter" />
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:id="@+id/linearLayout_text_filter"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true">
+
+            <RelativeLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="55dp">
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/textView_close_filter"
+                    android:layout_width="120dp"
+                    android:layout_height="40dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_toStartOf="@+id/textView_apply_filter"
+                    android:background="@drawable/button_close"
+                    android:gravity="center"
+                    android:text="@string/text_close"
+                    android:textColor="@color/textView_filter"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/textView_apply_filter"
+                    android:layout_width="130dp"
+                    android:layout_height="40dp"
+                    android:layout_marginEnd="10dp"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:background="@drawable/button_apply"
+                    android:text="@string/apply"
+                    android:textColor="@color/white"
+                    android:layout_alignParentEnd="true"/>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+   <include
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        layout="@layout/no_data_found"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true" />
+
+    <ProgressBar
+        android:id="@+id/progressBar_filter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:theme="@style/ProgressBar"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout_filter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical" />
+
+</RelativeLayout>

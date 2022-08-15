@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_filter">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.google.android.material.textview.MaterialTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginStart="10dp"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:text="@string/price_range"
+            android:textColor="@color/textView_price_fragment" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="25dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/textView_min_price_fragment"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="10dp"
+                    android:paddingEnd="10dp"
+                    android:text="0"
+                    android:textSize="16sp"
+                    android:textColor="@color/textView_sub_price_fragment" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_gravity="center"
+                    android:textSize="16sp"
+                    android:text="@string/dash"
+                    android:textColor="@color/textView_sub_price_fragment" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/textView_max_price_fragment"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="10dp"
+                    android:paddingEnd="10dp"
+                    android:text="0"
+                    android:textSize="16sp"
+                    android:textColor="@color/textView_sub_price_fragment" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <com.crystal.crystalrangeseekbar.widgets.CrystalRangeSeekbar
+            android:id="@+id/seekBar_price_fragment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            app:corner_radius="6"
+            app:bar_color="@color/seekBar_filter"
+            app:bar_highlight_color="@color/seekBar_highlight_filter"
+            app:left_thumb_color="@color/seekBar_thumb_filter"
+            app:right_thumb_color="@color/seekBar_thumb_filter"
+            app:left_thumb_color_pressed="@color/seekBar_thumb_filter"
+            app:right_thumb_color_pressed="@color/seekBar_thumb_filter"
+            app:data_type="_integer" />
+
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/progressBar_price_fragment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:theme="@style/ProgressBar"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>

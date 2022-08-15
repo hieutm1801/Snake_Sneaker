@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_toStartOf="@+id/textView_time_proReview_adapter">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/imageView_proReview_adapter"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                app:civ_border_width="2dp"
+                app:civ_border_color="@color/image_border_proReview_adapter"
+                android:src="@drawable/user_profile" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="vertical"
+                android:layout_marginStart="10dp">
+
+                <com.github.ornolfr.ratingview.RatingView
+                    android:id="@+id/ratingBar_proReview_adapter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:drawable_empty="@drawable/stare_gray"
+                    app:drawable_filled="@drawable/stare_g"
+                    app:drawable_margin="2dp"
+                    app:drawable_size="14sp"
+                    app:is_indicator="true"
+                    app:max_count="5" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/textView_user_proReview_adapter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:maxLines="1"
+                    android:ellipsize="end"
+                    android:textSize="14sp"
+                    android:text="@string/app_name"
+                    android:textColor="@color/textView_proReview_adapter" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/textView_time_proReview_adapter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentEnd="true"
+            android:text="@string/app_name"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:textSize="14sp"
+            android:textColor="@color/textView_sub_proReview_adapter" />
+
+    </RelativeLayout>
+
+    <me.chensir.expandabletextview.ExpandableTextView
+        android:id="@+id/textView_proReview_adapter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:textSize="14sp"
+        android:text="@string/lorem"
+        app:maxCollapsedLines="3"
+        app:contentTextSize="14sp"
+        app:expandText="@string/more"
+        app:collapseText="@string/less"
+        app:DrawableAndTextGravity="left"
+        app:contentTextColor="@color/textView_sub_proReview_adapter"
+        app:expandCollapseTextColor="@color/textView_app_color" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView_proReview_adapter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp" />
+
+    <View
+        android:id="@+id/view_proReview_adapter"
+        android:background="@color/view_proReview_adapter"
+        android:layout_width="match_parent"
+        android:layout_height="1dp" />
+
+</LinearLayout>

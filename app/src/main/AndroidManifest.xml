@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="hieutm.dev.snakesneaker">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:name="hieutm.dev.snakesneaker.util.YouApplication"
+        android:allowBackup="true"
+        android:hardwareAccelerated="true"
+        android:icon="@drawable/snakelogo02"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:requestLegacyExternalStorage="true"
+        android:roundIcon="@drawable/snakelogo02"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true">
+        <activity
+            android:name="hieutm.dev.snakesneaker.activity.WelcomeActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="hieutm.dev.snakesneaker.activity.Login"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="hieutm.dev.snakesneaker.activity.Verification"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="hieutm.dev.snakesneaker.activity.Register"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="hieutm.dev.snakesneaker.activity.ForgetPassword"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="hieutm.dev.snakesneaker.activity.SplashScreen"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait">
+            <intent-filter android:label="@string/app_name">
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="@string/host"
+                    android:pathPrefix="@string/pathPrefix"
+                    android:scheme="@string/scheme" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="hieutm.dev.snakesneaker.activity.MainActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="hieutm.dev.snakesneaker.activity.AboutUs"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="hieutm.dev.snakesneaker.activity.PrivacyPolicy"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="hieutm.dev.snakesneaker.activity.CouponsDetail"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="hieutm.dev.snakesneaker.activity.Coupons"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="hieutm.dev.snakesneaker.activity.OrderSummary"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="hieutm.dev.snakesneaker.activity.ChangeAddress"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="hieutm.dev.snakesneaker.activity.AddAddress"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="hieutm.dev.snakesneaker.activity.Cart"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="hieutm.dev.snakesneaker.activity.ProReviewImageView"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="hieutm.dev.snakesneaker.activity.ProReview"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="hieutm.dev.snakesneaker.activity.RatingReview"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="hieutm.dev.snakesneaker.activity.ContactUs"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="hieutm.dev.snakesneaker.activity.TermsOfUse"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="hieutm.dev.snakesneaker.activity.Faq"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="hieutm.dev.snakesneaker.activity.RRPolicy"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="hieutm.dev.snakesneaker.activity.CancellationPolicy"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="hieutm.dev.snakesneaker.activity.Filter"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="hieutm.dev.snakesneaker.activity.PaymentMethod"
+            android:configChanges="uiMode"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="hieutm.dev.snakesneaker.activity.BraintreePayment"
+            android:configChanges="uiMode"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="${applicationId}.braintree" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="hieutm.dev.snakesneaker.activity.StripAppPayment"
+            android:configChanges="uiMode"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="hieutm.dev.snakesneaker.activity.PayStackPayment"
+            android:configChanges="uiMode"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="hieutm.dev.snakesneaker.activity.ProImageView"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="hieutm.dev.snakesneaker.activity.ShowImage"
+            android:screenOrientation="portrait" />
+
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="@string/admob_id" />
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
+
+        <activity
+            android:name="com.facebook.FacebookActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:label="@string/app_name" />
+        <activity
+            android:name="com.facebook.CustomTabActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="@string/fb_login_protocol_scheme" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="com.onesignal.NotificationOpened.DEFAULT"
+            android:value="DISABLE" />
+
+    </application>
+
+    <queries>
+        <package android:name="com.facebook.katana" />
+    </queries>
+
+</manifest>

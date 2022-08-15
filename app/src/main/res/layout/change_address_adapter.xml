@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView android:id="@+id/cardView_addList_adapter"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="10dp"
+    app:cardCornerRadius="0dp"
+    app:cardElevation="2dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.radiobutton.MaterialRadioButton
+            android:id="@+id/radioButton_addList_adapter"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="15dp"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            app:buttonTint="@color/textView_app_color" />
+
+        <LinearLayout
+            android:layout_toEndOf="@+id/radioButton_addList_adapter"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="12dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/textView_name_addList_adapter"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toStartOf="@+id/ll_addList_adapter"
+                    android:layout_centerVertical="true"
+                    android:text="@string/app_name"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:maxLines="1"
+                    android:ellipsize="end"
+                    android:textColor="@color/textView_myAddress_adapter" />
+
+                <LinearLayout
+                    android:id="@+id/ll_addList_adapter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginStart="15dp"
+                    android:layout_alignParentEnd="true">
+
+                    <com.google.android.material.card.MaterialCardView
+                        android:id="@+id/cardView_addType_addList_adapter"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        app:cardElevation="0dp"
+                        app:cardCornerRadius="4dp">
+
+                        <com.google.android.material.textview.MaterialTextView
+                            android:id="@+id/textView_addType_addList_adapter"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingTop="5dp"
+                            android:paddingBottom="5dp"
+                            android:paddingStart="8dp"
+                            android:paddingEnd="8dp"
+                            android:textSize="12sp"
+                            android:text="@string/app_name"
+                            android:textColor="@color/textView_address_color"
+                            android:background="@color/textView_bg_myAddress_adapter" />
+
+                    </com.google.android.material.card.MaterialCardView>
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/button_edit_addList_adapter"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:layout_marginStart="15dp"
+                        app:cornerRadius="5dp"
+                        android:textSize="14sp"
+                        android:textStyle="bold"
+                        android:text="@string/edit"
+                        android:textAllCaps="false"
+                        android:textColor="@color/textView_app_color"
+                        app:backgroundTint="@color/white"
+                        android:shadowColor="@color/view_setting" />
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/textView_add_list_adapter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:text="@string/lorem"
+                android:layout_marginTop="5dp"
+                android:textColor="@color/textView_sub_myAddress_adapter" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/textView_phoneNo_add_list_adapter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/app_name"
+                android:textSize="16sp"
+                android:layout_marginTop="5dp"
+                android:textColor="@color/textView_sub_myAddress_adapter" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</com.google.android.material.card.MaterialCardView>

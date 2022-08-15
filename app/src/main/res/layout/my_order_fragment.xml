@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/app_background">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView_my_order"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp" />
+
+    <ProgressBar
+        android:id="@+id/progressBar_my_order"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:theme="@style/ProgressBar"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true" />
+
+    <LinearLayout
+        android:id="@+id/ll_empty_my_order"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:orientation="vertical"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true">
+
+        <ImageView
+            android:id="@+id/imageView_my_order"
+            android:layout_width="160dp"
+            android:layout_height="160dp"
+            android:layout_gravity="center"
+            android:src="@drawable/my_order"
+            android:contentDescription="@string/app_name" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/textView_noData_my_order"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:text="@string/no_data"
+            android:textColor="@color/textView_noData" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/button_my_order"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAllCaps="false"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center"
+            android:text="@string/start_shopping"
+            android:textColor="@color/white"
+            app:cornerRadius="0dp"
+            app:backgroundTint="@color/button_bg" />
+
+    </LinearLayout>
+
+</RelativeLayout>

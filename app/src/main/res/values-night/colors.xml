@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <color name="colorPrimary">#000000</color>
+    <color name="colorPrimaryDark">#000000</color>
+    <color name="colorAccent">#000000</color>
+    <color name="toolbar">#000000</color>
+    <color name="app_background">#000000</color>
+    <color name="header_bg_nav">#222222</color>
+    <color name="imageView_border_nav">#FFFFFF</color>
+    <color name="drawer_nav_bg">#000000</color>
+    <color name="color_icon_menu">#FFFFFF</color>
+    <color name="color_icon_menu_dark">#FFFFFF</color>
+    <color name="drawer_item">#FFFFFF</color>
+    <color name="drawer_item_selected">#FF5152</color>
+    <color name="page_indicator_active">#6C6C6C</color>
+    <color name="page_indicator_inactive">#FFFFFF</color>
+    <color name="info">#fcdd7a</color>
+    <color name="info_black">#000000</color>
+    <color name="btn_skip_welcome">#6C6C6C</color>
+    <color name="text_skip_welcome">#FFFFFF</color>
+    <color name="button_next_welcome">#FFFFFF</color>
+    <color name="text_next_welcome">#6C6C6C</color>
+
+    <color name="bg_login">#000000</color>
+    <color name="view_login">#FFFFFF</color>
+    <color name="image_login">#FF5152</color>
+    <color name="textView_login">#FFFFFF</color>
+    <color name="textView_sub_login">#CCFFFFFF</color>
+    <color name="skip_login">#4E5460</color>
+    <color name="textView_button_login">#FFFFFF</color>
+    <color name="button_google_line_login">#FF5152</color>
+    <color name="check_box_bg_login">#FFFFFF</color>
+    <color name="check_box_check_bg_login">#FFFFFF</color>
+    <color name="check_box_tick_login">#FF5152</color>
+    <color name="check_box_circle_login">#FF5152</color>
+    <color name="textView_fp">#FFFFFF</color>
+    <color name="textView_sub_fp">#CCFFFFFF</color>
+    <color name="textView_verification">#FFFFFF</color>
+
+    <color name="home_page_bg">#000000</color>
+    <color name="home_view">#0f0f0f</color>
+    <color name="textView_search_hint_home">#A8A9AE</color>
+    <color name="textView_search_home">#000000</color>
+    <color name="cursor_editText_search_home">#FF5152</color>
+    <color name="textView_select_text_search_home">#FFB9BA</color>
+    <color name="textView_home">#FFFFFF</color>
+    <color name="page_indicator_active_home">#FFFFFF</color>
+    <color name="page_indicator_inactive_home">#FF5152</color>
+    <color name="slider_bg_home">#B3C6C6C6</color>
+    <color name="textView_home_cat">#FFFFFF</color>
+    <color name="textView_home_pro">#FFFFFF</color>
+    <color name="textView_sub_home_pro">#CDFFFFFF</color>
+
+    <color name="textView_category_adapter">#FFFFFF</color>
+    <color name="textView_pro_fragment">#FFFFFF</color>
+    <color name="textView_proList_adapter">#FFFFFF</color>
+    <color name="textView_sub_proList_adapter">#B3FFFFFF</color>
+
+    <color name="textView_title_pro_detail">#FFFFFF</color>
+    <color name="view_pro_detail">#4DD7D7D7</color>
+    <color name="addToCart_bg_pro_detail">#303030</color>
+    <color name="bg_pro_view_adapter">#000000</color>
+    <color name="page_indicator_active_pro_detail">#FFFFFF</color>
+    <color name="page_indicator_inactive_pro_detail">#FF5152</color>
+    <color name="textView_pro_size_adapter">#BFFFFFFF</color>
+    <color name="textView_select_pro_size_adapter">#000000</color>
+    <color name="cardView_pro_size_adapter">#565656</color>
+    <color name="cardView_select_pro_size_adapter">#FFFFFF</color>
+    <color name="stroke_color_adapter">#FF5152</color>
+    <color name="stroke_second_color_adapter">#FFFFFF</color>
+    <color name="image_color_adapter">#FF5152</color>
+    <color name="image_second_color_adapter">#FFFFFF</color>
+    <color name="textView_proReview">#FFFFFF</color>
+    <color name="image_border_proReview_adapter">#BFFFFFFF</color>
+    <color name="textView_proReview_adapter">#FFFFFF</color>
+    <color name="textView_sub_proReview_adapter">#CCFFFFFF</color>
+    <color name="view_proReview_adapter">#4DD7D7D7</color>
+
+    <color name="bg_filter">#000000</color>
+    <color name="textView_filter">#FFFFFF</color>
+    <color name="rec_filter">#1E1E1E</color>
+    <color name="textView_filter_adapter">#FFFFFF</color>
+    <color name="textView_select_filter_adapter">#FF5152</color>
+    <color name="select_bg_filter">#000000</color>
+    <color name="textView_filterSortBy_adapter">#636363</color>
+    <color name="textView_select_filterSortBy_adapter">#FFFFFF</color>
+    <color name="cardView_filterSortBy_adapter">#E4E3E3</color>
+    <color name="cardView_select_filterSortBy_adapter">#FF5152</color>
+    <color name="seekBar_filter">#7C858E</color>
+    <color name="seekBar_highlight_filter">#FFFFFF</color>
+    <color name="seekBar_thumb_filter">#FF5152</color>
+    <color name="view_filter">#4DD7D7D7</color>
+    <color name="textView_price_fragment">#FFFFFF</color>
+    <color name="textView_sub_price_fragment">#FFFFFF</color>
+    <color name="line_price_fragment">#FFFFFF</color>
+    <color name="textView_brand_selection_fragment">#FFFFFF</color>
+    <color name="textView_hint_brand_selection_fragment">#CCFFFFFF</color>
+    <color name="textView_brand_selection_adapter">#FFFFFF</color>
+    <color name="textView_size_selection_fragment">#FFFFFF</color>
+    <color name="textView_hint_size_selection_fragment">#CCFFFFFF</color>
+    <color name="textView_size_selection_adapter">#FFFFFF</color>
+    <color name="line_filter">#FFFFFF</color>
+
+    <color name="textView_cart">#FFFFFF</color>
+    <color name="textView_sub_cart">#CCFFFFFF</color>
+    <color name="view_cart">#4DD7D7D7</color>
+    <color name="textView_cart_adapter">#FFFFFF</color>
+    <color name="textView_sub_cart_adapter">#CCFFFFFF</color>
+    <color name="button_cart_adapter">#FF5152</color>
+    <color name="textView_orderSum">#FFFFFF</color>
+    <color name="textView_add_orderSum">#868789</color>
+    <color name="cardView_add_bg_orderSum">#F2F3F7</color>
+    <color name="textView_coupons_detail">#FFFFFF</color>
+    <color name="textView_sub_coupons_detail">#CCFFFFFF</color>
+    <color name="view_coupons_detail">#4DD7D7D7</color>
+
+    <color name="textView_title_payMethod">#44494D</color>
+    <color name="textView_payMethod">#FFFFFF</color>
+    <color name="textView_sub_payMethod">#FFFFFF</color>
+    <color name="stroke_payMethod">#343434</color>
+    <color name="cardView_bg_payMethod">#222222</color>
+    <color name="textView_doc">#FFFFFF</color>
+    <color name="textView_sub_doc">#BFFFFFFF</color>
+
+    <color name="textView_pro">#FFFFFF</color>
+    <color name="textView_sub_pro">#FF5152</color>
+    <color name="view_pro">#4DD7D7D7</color>
+    <color name="textView_pro_image">#FFFFFF</color>
+    <color name="bg_pro_image">#222222</color>
+    <color name="textView_editPro">#FFFFFF</color>
+    <color name="textView_hint_editPro">#FFFFFF</color>
+    <color name="textView_hint_layout_editPro">#FF5152</color>
+    <color name="textView_box_color">#99FFFFFF</color>
+    <color name="textView_box_select_color">#FF5152</color>
+    <color name="view_profile">#CDCDCD</color>
+    <color name="mtrl_textinput_default_box_stroke_color" tools:override="true">
+        @color/textView_box_color
+    </color>
+
+    <color name="textView_myOrder_adapter">#FFFFFF</color>
+    <color name="textView_sub_myOrder_adapter">#CCFFFFFF</color>
+    <color name="view_myOrder_detail">#4DD7D7D7</color>
+    <color name="textView_myOrder_detail">#FFFFFF</color>
+    <color name="textView_sub_myOrder_detail">#CCFFFFFF</color>
+    <color name="textView_order_tracking_Adapter">#FFFFFF</color>
+    <color name="textView_sub_order_tracking_Adapter">#CCFFFFFF</color>
+    <color name="textView_cancel_order">#FFFFFF</color>
+
+    <color name="textView_rating">#FFFFFF</color>
+    <color name="textView_edit_rating">#FFFFFF</color>
+    <color name="textView_hint_edit_rating">#FFFFFF</color>
+    <color name="textView_hint_layout_edit_rating">#FF5152</color>
+
+    <color name="textView_bankDetail_add">#FFFFFF</color>
+    <color name="textView_bankDetail_adapter">#FFFFFF</color>
+    <color name="textView_sub_bankDetail_adapter">#CCFFFFFF</color>
+    <color name="view_bankDetail_adapter">#4DD7D7D7</color>
+    <color name="textView_address">#FFFFFF</color>
+    <color name="textView_sub_address">#CCFFFFFF</color>
+    <color name="title_bg_dialog_country">#222222</color>
+    <color name="bg_dialog_country">#000000</color>
+    <color name="line_dialog_country">#99FFFFFF</color>
+    <color name="textView_title_dialog_country">#FFFFFF</color>
+    <color name="textView_hint_dialog_country">#BFFFFFFF</color>
+    <color name="textView_country_adapter">#FFFFFF</color>
+    <color name="view_country_adapter">#4DD7D7D7</color>
+
+    <color name="textView_myAddress">#FFFFFF</color>
+    <color name="textView_myAddress_adapter">#FFFFFF</color>
+    <color name="textView_sub_myAddress_adapter">#BFFFFFFF</color>
+    <color name="textView_bg_myAddress_adapter">#F0F0F0</color>
+    <color name="view_myAddress_adapter">#4DD7D7D7</color>
+
+    <color name="textView_setting">#FFFFFF</color>
+    <color name="view_setting">#4DD7D7D7</color>
+    <color name="switch_thumb_unselect">#ADADAD</color>
+    <color name="textView_them">#FFFFFF</color>
+    <color name="card_bg_them">#424040</color>
+    <color name="about_us_Text">#FFFFFF</color>
+    <color name="about_us_SubText">#FFFFFF</color>
+    <color name="textView_contact_us">#FFFFFF</color>
+    <color name="line_contact_us">#99FFFFFF</color>
+    <color name="textView_faq_adapter">#FFFFFF</color>
+    <color name="textView_sub_faq_adapter">#CCFFFFFF</color>
+    <color name="expansionHeader_bg_faq_adapter">#222222</color>
+    <color name="expansionLayout_bg_faq_adapter">#99222222</color>
+    <color name="faq_border_bg">#BFFFFFFF</color>
+    <color name="faq_border_view_bg">#FF5152</color>
+
+    <color name="red">#FF1100</color>
+    <color name="green">#349D49</color>
+    <color name="yellow">#ffd973</color>
+    <color name="white">#FFFFFF</color>
+    <color name="profile">#FFFFFF</color>
+    <color name="text_add_cart">#FFFFFF</color>
+    <color name="text_white">#6C6C6C</color>
+    <color name="black">#000000</color>
+    <color name="transparent">#00000000</color>
+
+    <color name="fav_bg">#FAFAFA</color>
+    <color name="fav_bg_shadow">#CDCDCD</color>
+    <color name="textView_dialog_update">#FFFFFF</color>
+    <color name="spinner_item_text">#CCFFFFFF</color>
+    <color name="dialog_text">#FFFFFF</color>
+    <color name="dialog_text_button">#FFFFFF</color>
+    <color name="check_box">#FFFFFF</color>
+    <color name="check_box_select">#FF5152</color>
+    <color name="progressbar_style">#FFFFFF</color>
+    <color name="image_color">#FFFFFF</color>
+    <color name="colorf9">#0C1B23</color>
+    <color name="cursor_editText">#FFFFFF</color>
+    <color name="textView_select_text">#4A6865</color>
+    <color name="textView_noData">#FFFFFF</color>
+    <color name="button_bg">#5d5d5d</color>
+    <color name="textView_app_color">#FF5152</color>
+    <color name="textView_address_color">#FFFFFF</color>
+    <color name="button_apply">#FF5152</color>
+    <color name="view_pro_un_available">#73FFFFFF</color>
+    <color name="textView_pro_un_available_bg">#FFFFFF</color>
+
+    <color name="textAmountColor">#FFFFFF</color>
+</resources>

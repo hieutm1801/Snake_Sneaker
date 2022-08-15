@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "1013670643922",
+    "project_id": "snake-sneaker-1654090182370",
+    "storage_bucket": "snake-sneaker-1654090182370.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1013670643922:android:63ce4c1a84ce0d9648c50b",
+        "android_client_info": {
+          "package_name": "hieutm.dev.snakesneaker"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1013670643922-rhqoi19p4h0quet0nj2uiltg5rucvn3g.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "hieutm.dev.snakesneaker",
+            "certificate_hash": "a719ab1c6fe3d4e6ad6e9f389b011b486ed10223"
+          }
+        },
+        {
+          "client_id": "1013670643922-0nkmn43ic6o7p0vu9a393a82lov3196n.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAfTt6-DuVsPK_AJg1Enu_iXFfZjfWnJ1M"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1013670643922-0nkmn43ic6o7p0vu9a393a82lov3196n.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

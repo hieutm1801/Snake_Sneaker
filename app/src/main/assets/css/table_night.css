@@ -1,0 +1,22 @@
+.description-content table {
+    width: 100%;
+    margin-bottom: 20px;
+    border-color: #878787;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+.description-content table tr td {
+    padding: 5px 10px;
+    border-color: #878787;
+    line-height: 26px;
+}
+.description-content table tr td ul li {
+    line-height: 25px;
+	list-style: none;
+}
+.description-content table tr td ul {
+    margin: 0;
+    padding: 0;
+}

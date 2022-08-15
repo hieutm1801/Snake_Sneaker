@@ -1,0 +1,305 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_background"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="hieutm.dev.snakesneaker.activity.Cart">
+
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/toolbar_cart"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/toolbar"
+        android:textStyle="bold"
+        app:titleTextColor="@color/color_icon_menu"
+        android:theme="@style/AppTheme.AppBarOverlayLight"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+
+    <RelativeLayout
+        android:id="@+id/rel_cart"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/linearLayout_cart"
+        android:layout_below="@+id/toolbar_cart">
+
+        <androidx.core.widget.NestedScrollView
+            android:fillViewport="true"
+            android:layout_above="@+id/cardView_place_cart"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:paddingBottom="15dp"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recyclerView_cart"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="10dp" />
+
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginBottom="15dp"
+                    app:cardCornerRadius="0dp">
+
+                    <LinearLayout
+                        android:paddingStart="10dp"
+                        android:paddingEnd="10dp"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <com.google.android.material.textview.MaterialTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="5dp"
+                            android:layout_marginEnd="5dp"
+                            android:layout_marginTop="10dp"
+                            android:text="@string/price_detail"
+                            android:textSize="18sp"
+                            android:textStyle="bold"
+                            android:textColor="@color/textView_cart" />
+
+                        <View
+                            android:layout_marginTop="10dp"
+                            android:background="@color/view_cart"
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp" />
+
+                        <RelativeLayout
+                            android:layout_marginStart="5dp"
+                            android:layout_marginEnd="5dp"
+                            android:layout_marginTop="15dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <com.google.android.material.textview.MaterialTextView
+                                android:id="@+id/textView_item_cart"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/app_name"
+                                android:textSize="14sp"
+                                android:textColor="@color/textView_sub_cart" />
+
+                            <com.google.android.material.textview.MaterialTextView
+                                android:id="@+id/textView_total_price_cart"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="10dp"
+                                android:layout_alignParentEnd="true"
+                                android:layout_toEndOf="@+id/textView_item_cart"
+                                android:gravity="end"
+                                android:textSize="14sp"
+                                android:text="@string/app_name"
+                                android:textColor="@color/textView_sub_cart" />
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_marginStart="5dp"
+                            android:layout_marginEnd="5dp"
+                            android:layout_marginTop="15dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <com.google.android.material.textview.MaterialTextView
+                                android:id="@+id/textView_titleDelivery_cart"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/delivery"
+                                android:textSize="14sp"
+                                android:textColor="@color/textView_sub_cart" />
+
+                            <com.google.android.material.textview.MaterialTextView
+                                android:id="@+id/textView_delivery_cart"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="10dp"
+                                android:layout_alignParentEnd="true"
+                                android:layout_toEndOf="@+id/textView_titleDelivery_cart"
+                                android:gravity="end"
+                                android:textSize="14sp"
+                                android:text="@string/app_name"
+                                android:textColor="@color/textView_sub_cart" />
+
+                        </RelativeLayout>
+
+                        <View
+                            android:layout_marginStart="5dp"
+                            android:layout_marginEnd="5dp"
+                            android:layout_marginTop="15dp"
+                            android:background="@color/view_cart"
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp" />
+
+                        <RelativeLayout
+                            android:layout_marginStart="5dp"
+                            android:layout_marginEnd="5dp"
+                            android:layout_marginTop="15dp"
+                            android:layout_marginBottom="15dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <com.google.android.material.textview.MaterialTextView
+                                android:id="@+id/textView_titleTotalAmount_cart"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/amount_payable"
+                                android:textSize="14sp"
+                                android:textStyle="bold"
+                                android:textColor="@color/textView_sub_cart" />
+
+                            <com.google.android.material.textview.MaterialTextView
+                                android:id="@+id/textView_totalAmount_cart"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="10dp"
+                                android:layout_alignParentEnd="true"
+                                android:layout_toEndOf="@+id/textView_titleTotalAmount_cart"
+                                android:gravity="end"
+                                android:textSize="14sp"
+                                android:text="@string/app_name"
+                                android:textColor="@color/textView_sub_cart" />
+
+                        </RelativeLayout>
+
+                        <View
+                            android:id="@+id/view_save_cart"
+                            android:background="@color/view_cart"
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp" />
+
+                        <com.google.android.material.textview.MaterialTextView
+                            android:id="@+id/textView_save_cart"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="5dp"
+                            android:layout_marginEnd="5dp"
+                            android:layout_marginTop="15dp"
+                            android:layout_marginBottom="15dp"
+                            android:textStyle="bold"
+                            android:textSize="14sp"
+                            android:text="@string/amount_payable"
+                            android:textColor="@color/green" />
+
+                    </LinearLayout>
+
+                </com.google.android.material.card.MaterialCardView>
+
+            </LinearLayout>
+
+        </androidx.core.widget.NestedScrollView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/cardView_place_cart"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="0dp"
+            android:layout_alignParentBottom="true">
+
+            <RelativeLayout
+                android:id="@+id/relativeLayout_place_cart"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/textView_placePrice_cart"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toStartOf="@+id/button_order_cart"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="15dp"
+                    android:textStyle="bold"
+                    android:textSize="18sp"
+                    android:text="@string/app_name"
+                    android:textColor="@color/textView_sub_cart" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/button_order_cart"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="15dp"
+                    android:layout_marginStart="10dp"
+                    android:text="@string/place_order"
+                    android:textColor="@color/white"
+                    app:cornerRadius="5dp"
+                    android:textAllCaps="false"
+                    app:backgroundTint="@color/button_bg" />
+
+            </RelativeLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout_cart"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical" />
+
+    <ProgressBar
+        android:id="@+id/progressBar_cart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:theme="@style/ProgressBar"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true" />
+
+    <LinearLayout
+        android:id="@+id/ll_empty_cart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:orientation="vertical"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true">
+
+        <ImageView
+            android:id="@+id/imageView_cart"
+            android:layout_width="160dp"
+            android:layout_height="160dp"
+            android:layout_gravity="center"
+            android:src="@drawable/empty_cart"
+            android:contentDescription="@string/app_name" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/textView_noData_cart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:text="@string/app_name"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="@color/textView_noData" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/button_cart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center"
+            android:textAllCaps="false"
+            android:text="@string/shop_now"
+            android:textColor="@color/white"
+            app:cornerRadius="0dp"
+            app:backgroundTint="@color/button_bg" />
+
+    </LinearLayout>
+
+</RelativeLayout>

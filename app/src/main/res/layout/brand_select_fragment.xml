@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_filter">
+
+    <RelativeLayout
+        android:id="@+id/rel_main_brand_select"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/rel_search_brand_select"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:orientation="horizontal"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/filter_search_bg">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:src="@drawable/search_home_ic"
+                app:tint="@color/image_color"
+                android:contentDescription="@string/app_name"/>
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/editText_search_brand_select"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:paddingStart="8dp"
+                android:paddingEnd="8dp"
+                android:background="@color/transparent"
+                android:textSize="14sp"
+                android:hint="@string/search_brand"
+                android:theme="@style/editText_style"
+                android:textColorHint="@color/textView_hint_brand_selection_fragment"
+                android:textColor="@color/textView_brand_selection_fragment"/>
+
+        </LinearLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerView_brand_select"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/rel_search_brand_select" />
+
+    </RelativeLayout>
+
+    <ProgressBar
+        android:id="@+id/progressBar_brand_select"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:theme="@style/ProgressBar"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/textView_noData_brand_select"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:text="@string/no_data"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="@color/textView_noData" />
+
+</RelativeLayout>

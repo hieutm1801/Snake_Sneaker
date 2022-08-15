@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="hieutm.dev.snakesneaker.activity.PayStackPayment">
+
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/toolbar_payStack_payment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/toolbar"
+        android:textStyle="bold"
+        app:titleTextColor="@color/color_icon_menu"
+        android:theme="@style/AppTheme.AppBarOverlayLight"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInput_cardNumber_payStack_payment"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:hint="@string/card_number"
+        android:textColorHint="@color/textView_hint_editPro"
+        app:boxStrokeColor="@color/textView_box_select_color"
+        app:hintTextColor="@color/textView_hint_layout_editPro"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar_payStack_payment">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editText_cardNumber_payStack_payment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:singleLine="true"
+            android:textColor="@color/textView_editPro"
+            android:theme="@style/editText_style" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInput_cardExpiry_payStack_payment"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:hint="@string/card_expiry"
+        android:textColorHint="@color/textView_hint_editPro"
+        app:boxStrokeColor="@color/textView_box_select_color"
+        app:hintTextColor="@color/textView_hint_layout_editPro"
+        app:layout_constraintEnd_toStartOf="@+id/textInput_cvv_payStack_payment"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="@+id/textInput_cardNumber_payStack_payment"
+        app:layout_constraintTop_toBottomOf="@+id/textInput_cardNumber_payStack_payment">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editText_cardExpiry_payStack_payment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:maxLength="5"
+            android:singleLine="true"
+            android:textColor="@color/textView_editPro"
+            android:theme="@style/editText_style" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInput_cvv_payStack_payment"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:hint="@string/cvv"
+        android:textColorHint="@color/textView_hint_editPro"
+        app:boxStrokeColor="@color/textView_box_select_color"
+        app:hintTextColor="@color/textView_hint_layout_editPro"
+        app:layout_constraintEnd_toEndOf="@+id/textInput_cardNumber_payStack_payment"
+        app:layout_constraintStart_toEndOf="@+id/textInput_cardExpiry_payStack_payment"
+        app:layout_constraintTop_toTopOf="@+id/textInput_cardExpiry_payStack_payment">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editText_cvv_payStack_payment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:singleLine="true"
+            android:textColor="@color/textView_editPro"
+            android:theme="@style/editText_style" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/button_payStack_payment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="10dp"
+        android:text="@string/pay_now"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        app:backgroundTint="@color/button_bg"
+        app:cornerRadius="5dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textInput_cvv_payStack_payment" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
